@@ -1,0 +1,96 @@
+<!-- Portfolio For U — réf. client XNHGRV -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projets — Redouane Assani</title>
+<meta name="description" content="Projets d'infrastructure réseau de Redouane Assani : pare-feu Stormshield, NAS, VPN, Active Directory et Wi-Fi 802.1X." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<input type="checkbox" id="navToggle" class="nav-toggle" />
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Redouane<span class="dot">.</span></a>
+    <label for="navToggle" class="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="veille.html">Veille techno</a>
+      <a href="contact.html" class="nav-cta">Me contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Projets</div>
+    <p class="section-label">Projets</p>
+    <h1>Deux infrastructures conçues et sécurisées de bout en bout</h1>
+    <p>Réalisés en maquette sur Proxmox dans le cadre du BTS SIO SISR, pour une PME fictive de 40 employés. Le projet 2 s'appuie sur l'infrastructure du projet 1.</p>
+  </section>
+
+  <section id="liste-projets">
+    <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="card">
+        <span class="status-badge">Réalisé</span>
+        <h3>Projet 1 — Infrastructure réseau sécurisée</h3>
+        <p>Pare-feu Stormshield, DMZ, NAS TrueNAS, VPN SSL et centralisation des journaux avec Rsyslog.</p>
+        <p><a href="projet-infrastructure.html">Voir le détail du projet →</a></p>
+      </div>
+      <div class="card">
+        <span class="status-badge">Réalisé</span>
+        <h3>Projet 2 — Active Directory &amp; Wi-Fi 802.1X</h3>
+        <p>Centralisation des utilisateurs avec Active Directory et sécurisation de l'accès Wi-Fi via NPS/RADIUS.</p>
+        <p><a href="projet-active-directory.html">Voir le détail du projet →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="e4" class="prestations">
+    <p class="section-label">Épreuve E4 — Support &amp; mise à disposition</p>
+    <h2>Autres réalisations &amp; documentation</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>NAS Synology DS225+</h3>
+        <p>Installation, RAID SHR/Btrfs, durcissement sécurité (2FA, Anti-DDoS, pare-feu DSM), sauvegardes locales et cloud (Hyper Backup).</p>
+      </div>
+      <div class="card">
+        <h3>VPN OpenVPN sur NAS</h3>
+        <p>Déploiement du VPN Server intégré au DSM, redirection de port NAT, export/import de la configuration client.</p>
+      </div>
+      <div class="card">
+        <h3>Documentation client</h3>
+        <p>Procédure de connexion au NAS (SMB) et procédure d'ajout de licences Google Workspace via StreamOne Ion.</p>
+      </div>
+    </div>
+    <div class="doc-links">
+      <a href="assets/tableau-synthese-e4.pdf" target="_blank" rel="noopener">📄 Tableau de synthèse E4 (PDF)</a>
+      <a href="assets/realisation-nas-synology.pdf" target="_blank" rel="noopener">📄 Réalisation NAS Synology (PDF)</a>
+      <a href="assets/procedure-openvpn.pdf" target="_blank" rel="noopener">📄 Procédure OpenVPN (PDF)</a>
+      <a href="assets/procedure-connexion-nas.pdf" target="_blank" rel="noopener">📝 Procédure connexion NAS</a>
+      <a href="assets/procedure-licences-google-workspace.pdf" target="_blank" rel="noopener">📝 Procédure licences Google Workspace</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Redouane Assani — Administration &amp; Sécurité des Réseaux</p>
+  <p class="demo-mention">Portfolio créé par <a href="https://portfolio-for-u.fr" target="_blank" rel="noopener">Portfolio For U</a> — formule Clé en main.</p>
+</footer>
+
+</body>
+</html>

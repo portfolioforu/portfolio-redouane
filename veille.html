@@ -1,0 +1,68 @@
+<!-- Portfolio For U — réf. client XNHGRV -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veille technologique — Redouane Assani</title>
+<meta name="description" content="Veille technologique cybersécurité de Redouane Assani." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<input type="checkbox" id="navToggle" class="nav-toggle" />
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Redouane<span class="dot">.</span></a>
+    <label for="navToggle" class="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html" class="active">Veille techno</a>
+      <a href="contact.html" class="nav-cta">Me contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Veille techno</div>
+    <p class="section-label">Veille technologique</p>
+    <h1>Suivre l'actualité cybersécurité</h1>
+    <p>Une veille régulière sur les cyberattaques et la sécurité des données, appuyée notamment sur un serveur de veille mis en place par les professeurs du Lycée Le Castel (sources ANSSI, CERT-FR).</p>
+  </section>
+
+  <section id="articles">
+    <div class="article-card">
+      <p class="article-meta">25/11/2024 — Source : Journal du Geek</p>
+      <h3>Piratage de Free : Telegram contraint de livrer le hacker à la justice</h3>
+      <p><span class="label">Le sujet :</span> en novembre 2024, l'opérateur télécoms Free a été victime de l'une des plus grandes cyberattaques jamais enregistrées en France. Un hacker a réussi à exfiltrer les données de 19 millions de clients, incluant des IBAN, et a annoncé la mise en vente de ces données sur Telegram.</p>
+      <p><span class="label">Le problème :</span> Telegram refusait initialement de coopérer avec la justice française. Un tribunal a finalement ordonné à la plateforme de communiquer les données d'identification du hacker (téléphone, adresses IP). La vente n'a pas eu lieu, mais 100 000 numéros avaient déjà été publiés comme preuve.</p>
+    </div>
+    <div class="article-card">
+      <p class="article-meta">14/02/2025 — Source : Usine Digitale</p>
+      <h3>Cyberattaque contre la Caisse des Dépôts : 70 000 personnes touchées</h3>
+      <p><span class="label">Le sujet :</span> en février 2025, la Caisse des Dépôts a subi une cyberattaque ciblant sa plateforme Ircantec. Les données personnelles de 70 000 personnes ont été dérobées : noms, dates et lieux de naissance, numéros de sécurité sociale, adresses postales.</p>
+      <p><span class="label">Le problème :</span> les attaquants n'ont pas exploité de faille technique classique, mais des identifiants volés d'employeurs du secteur public (credential stuffing), contournant les défenses sans alerte immédiate. La Caisse des Dépôts a notifié la CNIL, déposé plainte et renforcé ses contrôles d'accès.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Redouane Assani — Administration &amp; Sécurité des Réseaux</p>
+  <p class="demo-mention">Portfolio créé par <a href="https://portfolio-for-u.fr" target="_blank" rel="noopener">Portfolio For U</a> — formule Clé en main.</p>
+</footer>
+
+</body>
+</html>
