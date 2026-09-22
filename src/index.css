@@ -1,0 +1,71 @@
+/* Portfolio For U — réf. client XNHGRV */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-navy: #0a0f1a;
+  --color-navy-alt: #101a2b;
+  --color-fg: #eef2f7;
+  --color-fg-soft: #9fb0c3;
+  --color-fg-faint: #64768c;
+  --color-cyan: #22b8cf;
+  --color-cyan-soft: #8fe3ef;
+  --color-cyan-dim: #12232c;
+  --color-line: #1c2736;
+  --color-ok: #34d399;
+}
+
+:root {
+  --pfu-ref: "XNHGRV";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-navy);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-cyan);
+  color: var(--color-navy);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1.1s step-end infinite;
+}
